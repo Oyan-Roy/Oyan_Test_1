@@ -6,7 +6,7 @@ client = OpenAI(
   api_key="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",
 )
 
-st.title("Ask the AI Anything")
+st.title("Ask Anything")
 user_input = st.text_area("Enter your question:")
 
 if st.button("Submit") and user_input.strip():
