@@ -3,7 +3,7 @@ from openai import OpenAI
 from openai._exceptions import RateLimitError
 
 client = OpenAI(
-  base_url="https://openrouter.ai/api/v1/chat/completions",
+  base_url="https://openrouter.ai/api/v1",
   api_key="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",
 )
 
@@ -13,8 +13,8 @@ user_input = st.text_area("Enter your question:")
 if st.button("Submit") and user_input.strip():
     with st.spinner("Thinking..."):
         completion = client.chat.completions.create(
-            model="openai/gpt-oss-20b:free",
-            messages=[
+            model= "qwen/qwen3.6-plus:free",
+            messages= [
                 {"role": "user", "content": user_input}
             ]
         )
