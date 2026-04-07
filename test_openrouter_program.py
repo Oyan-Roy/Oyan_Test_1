@@ -4,7 +4,7 @@ from openai._exceptions import RateLimitError
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="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",
 )
 
 st.title("Welcome to AIpedia! Ask Anything")
