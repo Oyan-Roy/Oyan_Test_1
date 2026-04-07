@@ -13,7 +13,7 @@ user_input = st.text_area("Enter your question:")
 if st.button("Submit") and user_input.strip():
     with st.spinner("Thinking..."):
         completion = client.chat.completions.create(
-            model="gpt-oss-20b:free",
+            model="openai/gpt-oss-20b:free",
             messages=[
                 {"role": "user", "content": user_input}
             ]
