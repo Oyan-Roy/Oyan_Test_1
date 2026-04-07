@@ -3,7 +3,7 @@ from openai import OpenAI
 from openai._exceptions import RateLimitError
 
 client = OpenAI(
-  base_url="https://openrouter.ai/api/v1",
+  base_url="https://openrouter.ai/api/v1/chat/completions",
   api_key="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",
 )
 
