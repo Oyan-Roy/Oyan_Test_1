@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-from openai._exceptions import RateLimitError
+#from openai._exceptions import RateLimitError
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
